@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Jamie Hammock",
+    "comment": "I've tried many beauty products, but none compare to blush Vintago SPF-50. Highly recommended!",
+    "product": "blush. Vintago SPF-50",
+    "image_source": "/assets/images/reviewers/person1.webp",
+    "image_alt": "image of a girl with wavy hair"
+  },
+  {
+    "name": "Ava Rocksmith",
+    "comment": "I love how this product absorbs quickly into my skin and doesn't leave a greasy residue. It's perfect!",
+    "product": "blush. Blasor BHA",
+    "image_source": "/assets/images/reviewers/person2.webp",
+    "image_alt": "image of brunette girl with short hair"
+  },
+  {
+    "name": "MEGATRON-5000",
+    "comment": "I guess this doesn’t work on metal. I got rusty real quick.",
+    "product": "blush. Tretinoin 0,05%",
+    "image_source": "/assets/images/reviewers/person3.webp",
+    "image_alt": "a deadly robot made forged out of steel"
+  },
+  {
+    "name": "Damon Tyrone Smith",
+    "comment": "Had a great experience with blush. products, will always recommend them to anyone. Top tier company and top notch products.",
+    "product": "blush. Charcoal Cleanser",
+    "image_source": "/assets/images/reviewers/person4.webp",
+    "image_alt": "guy with a beard and a light grey cap"
+  },
+  {
+    "name": "Jack O'Brien",
+    "comment": "I cant thank blush. enough. It saved my skin and I'll be forever grateful. I really recommend the Zinc Complex.",
+    "product": "blush. Zinc & Uthemine Complex",
+    "image_source": "/assets/images/reviewers/person5.webp",
+    "image_alt": "pale face dude with a smirk on his face"
+  },
+  {
+    "name": "Claudia Montovski",
+    "comment": "Ever since a friend of mine recommended me blush products, I've been hooked. The cleanser is one of the best products on the current market.",
+    "product": "blush. Rosehip Oil Cleanser (TXN)",
+    "image_source": "/assets/images/reviewers/person6.jpg",
+    "image_alt": "a girl with her mouth open staring into the camera lens"
+  }
+]

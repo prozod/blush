@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Shop for your favorite products" />
+    <link rel="icon" type="image/x-icon" href="assets/svg/favicon.svg" />
+    <link rel="stylesheet" type="text/css" href="/styles/product.css" />
+    <script src="/scripts/mobileMenu.js" type="module"></script>
+    <script src="/scripts/product.js" type="module"></script>
+    <title>Blush Products</title>
+  </head>
+  <body>
+    <div class="discount">20% OFF! Get the softest hands at a fraction of the cost - limited time offer!</div>
+    <!-- ------------- Navigation ------------- -->
+    <nav id="menu">
+      <span class="logo">blush.</span>
+
+      <!-- ------ Mobile Menu ------- -->
+      <button role="button" class="menu__mobile--icon" id="hamburger">
+        <svg color="currentColor" viewBox="0 0 100 50" width="40" height="40">
+          <rect width="70" height="10"></rect>
+          <rect y="20" width="70" height="10"></rect>
+          <rect y="40" width="70" height="10"></rect>
+        </svg>
+      </button>
+      <ul class="menu__mobile">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="shop.html">Shop</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">FAQ</a>
+        </li>
+        <li>
+          <a href="#">Cart</a>
+        </li>
+        <li>
+          <a href="#">Account</a>
+        </li>
+      </ul>
+
+      <!-- ------ Desktop Menu ------- -->
+      <ul class="menu__desktop">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="shop.html">Shop</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">FAQ</a>
+        </li>
+      </ul>
+      <ul class="account">
+        <li>
+          <a href="/">
+            <img src="assets/svg/basket-shopping.svg" alt="shopping cart icon" height="24" />
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="assets/svg/account-svg.svg" alt="user profile icon" height="24" />
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- ------------------ Product ------------------ -->
+    <section class="product">
+      <div class="product__wrapper">
+        <div class="product__info">
+          <div class="product__details">
+            <h1>blush. Vintago SPF-50</h1>
+            <p>UV Protection from the sun. Care for your skin, stay healthy!</p>
+          </div>
+          <div class="product__order">
+            <div class="product__order--quantity">
+              <span>Quantity</span>
+              <div>
+                <input
+                  data-min="1"
+                  data-max="0"
+                  type="text"
+                  name="quantity"
+                  id="quantity"
+                  value="1"
+                  readonly="readonly"
+                  aria-label="Quantity input field"
+                />
+                <div class="quantity__selectors-container">
+                  <div class="quantity__selectors">
+                    <button type="button" class="increment-quantity" aria-label="Add one">
+                      <span>&#43;</span>
+                    </button>
+                    <button type="button" class="decrement-quantity" aria-label="Subtract one" disabled>
+                      <span>&#8722;</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product__order--size">
+              <span>Size</span>
+              <select name="size" id="size-select" aria-label="Dimension selection menu">
+                <option value="">Dimensiune</option>
+                <option value="dog">50ml</option>
+                <option value="cat">75ml</option>
+                <option value="cat">150ml</option>
+              </select>
+            </div>
+          </div>
+          <div class="product__cta">
+            <p>$39,99</p>
+            <button id="add_cart_cta">Add to cart</button>
+          </div>
+          <aside class="cart__items">
+            <p id="items_in_cart"></p>
+            <button id="empty_cart">Empty cart</button>
+          </aside>
+        </div>
+        <img src="/assets/images/products/prod4.webp" alt="a hand cream used by our client" width="100%" />
+      </div>
+    </section>
+    <!-- ------------------ benefits ------------------  -->
+    <section class="benefits">
+      <h1>Key benefits</h1>
+      <div class="benefits__wrapper">
+        <article class="accordion__item">
+          <div>
+            <h2>Retinoid compounds</h2>
+            <button>
+              <img
+                src="/assets/svg/chevron-left.svg"
+                alt="an arrow pointing to open the accordion"
+                class="accordion__trigger-icon"
+              />
+            </button>
+          </div>
+          <p class="accordion__content">
+            As an added benefit, retinol also has been shown to unclog congested pores and soften the appearance of the
+            red areas that many people perceive as surface imperfections.
+          </p>
+        </article>
+        <article class="accordion__item">
+          <div>
+            <h2>Vitamin E (tocopherol)</h2>
+            <button>
+              <img
+                src="/assets/svg/chevron-left.svg"
+                alt="an arrow pointing to open the accordion"
+                class="accordion__trigger-icon"
+              />
+            </button>
+          </div>
+          <p class="accordion__content">
+            Vitamin E works in several ways to protect and defend skin from outside elements that can have a profound
+            negative impact on skin. Vitamin E is often found in sunscreens because of its supporting role in helping
+            defend skin from the stress caused by UV light exposure.
+          </p>
+        </article>
+        <article class="accordion__item">
+          <div>
+            <h2>Epigallocatechini-3 gallate (EGCG)</h2>
+            <button>
+              <img
+                src="/assets/svg/chevron-left.svg"
+                alt="an arrow pointing to open the accordion"
+                class="accordion__trigger-icon"
+              />
+            </button>
+          </div>
+          <p class="accordion__content">
+            Current research indicates that EGCG extract, applied topically, can help defend skin’s surface from
+            the environmental factors that have the most pronounced negative effects on skin. Green tea also has a
+            distinct calming effect
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ------------------ Footer ------------------- -->
+    <footer>
+      <div>
+        <ul>
+          <li>
+            <a href="#">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="#">Accesibility</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+        <p>&#169; Blush Industries 2016-2024</p>
+      </div>
+    </footer>
+  </body>
+</html>

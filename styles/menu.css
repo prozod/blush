@@ -1,0 +1,129 @@
+/* ------------ Navigation styles ------------ */
+
+.logo {
+  font-family: "Playfair";
+  font-size: 1.5rem;
+}
+
+#menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 0;
+  margin: 0 auto;
+  width: 65%;
+}
+#menu > #menuToggle {
+  display: none;
+}
+
+#menu > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2em;
+  list-style: none;
+}
+
+#menu > ul > li > a {
+  text-decoration: none;
+  color: black;
+  transition: color 500ms;
+  position: relative;
+}
+
+#menu > ul > li > a:hover {
+  text-decoration: none;
+}
+
+#menu > ul > li > a:before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 1px;
+  background: black;
+  bottom: -2px;
+  transition: width 500ms;
+}
+#menu > ul > li > a:hover:before {
+  width: 100%;
+}
+
+#menu > .account {
+  display: flex;
+  gap: 1rem;
+}
+#menu > .account > a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu__mobile--icon {
+  z-index: 500;
+  width: fit-content;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu__mobile--icon:active {
+  transform: scale(0.85);
+  transition: scale 250ms;
+}
+
+#menu > .menu__mobile {
+  position: absolute;
+  background: var(--secondary);
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+  gap: 1em;
+  opacity: 0%;
+  transition: opacity 250ms, width 1s;
+  z-index: 499;
+}
+#menu > .menu__mobile--show {
+  font-size: 1.25rem;
+  width: 100%;
+  opacity: 100%;
+  transition: width 1s, opacity 250ms;
+}
+#menu > .menu__mobile > a > li {
+  text-transform: uppercase;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* -------------- Media Queries for Navigation ----------- */
+
+@media screen and (max-width: 1200px) {
+  #menu {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #menu > .menu__desktop {
+    display: none;
+  }
+  #menu > .account {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #menu > .menu__mobile--icon {
+    display: none;
+  }
+  #menu > .menu__mobile {
+    display: none;
+  }
+}

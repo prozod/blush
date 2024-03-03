@@ -1,0 +1,130 @@
+@import url("menu.css");
+@import url("footer.css");
+
+:root {
+  --main: #f9f8f5;
+  --secondary: #fefefe;
+  --tertiary: #e9e8e5;
+  --lime: #dffe52;
+  --lime-light: #eaf768;
+  --dgray: #d9d9d9;
+}
+
+@font-face {
+  font-family: "Playfair";
+  src: url("/assets/fonts/PlayfairDisplay-Bold.ttf");
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("/assets/fonts/Manrope-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ManropeBold";
+  src: url("/assets/fonts/Manrope-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* ----------- Document styles and resets ----------- */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  background: var(--dgray);
+  border: none;
+  outline: none;
+  padding: 0.5em;
+  border-radius: 5px;
+  cursor: pointer;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+}
+
+body {
+  background-color: var(--main);
+  font-family: "Manrope";
+  line-height: 1.5;
+  width: 100%;
+}
+
+/* ----------- Helpers ---------------- */
+.mobileonly {
+  /* only displayed on 768 or less */
+  display: none;
+}
+
+.disable-scroll-mobile-menu {
+  position: fixed;
+  overflow: hidden;
+}
+
+.discount {
+  background: var(--lime);
+  color: black;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-family: "ManropeBold", sans-serif;
+  text-align: center;
+  display: block;
+  animation: 1s ease-out 0s 1 slideInTop;
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes revealSection {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
