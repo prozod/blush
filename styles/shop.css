@@ -35,6 +35,7 @@
 .shop__items--item {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 1em;
   background: var(--main);
   padding: 1em;
@@ -160,6 +161,7 @@
 
 .article__item {
   display: flex;
+  justify-content: space-between;
   background: var(--secondary);
   border-radius: 7px;
   padding: 2em;

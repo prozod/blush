@@ -119,6 +119,7 @@
   align-items: flex-start;
   gap: 1em;
   flex-basis: 50%;
+  list-style: none;
 }
 
 .characteristics__list--item {
